@@ -22,12 +22,12 @@ A simple Spring Boot REST API to manage users using MySQL as the database.
 
 # ```properties
 
-# === MySQL DB Configuration (in `application.properties`) ===
+# == MySQL DB Configuration (in `application.properties`) ==
 spring.datasource.url=jdbc:mysql://localhost:3306/userdb
 spring.datasource.username=root
 spring.datasource.password=root
 
-# === JPA Configuration (in `application.properties`) ===
+# == JPA Configuration (in `application.properties`) ==
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
 spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL8Dialect
