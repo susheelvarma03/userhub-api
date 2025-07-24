@@ -53,4 +53,12 @@ public class UserService {
 
         return userDTOS;
     }
+    public String deleteUser(Long id) {
+        UserEntity user = userRepository.findById(id)
+                .orElseThrow(() -> new RuntimeException("User not found"));
+
+        userRepository.delete(user);
+        return "User deleted successfully!";
+    }
+
 }
